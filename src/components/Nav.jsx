@@ -1,34 +1,78 @@
-import React from 'react'
-
-import { headerLogo } from '../assets/images'
-import {hamburger} from '../assets/icons'
-
-import {navLinks} from '../constants/index'
+import React, { useState } from 'react';
+import { headerLogo } from '../assets/images';
+import { hamburger } from '../assets/icons';
+import { navLinks } from '../constants/index';
 
 const Nav = () => {
-  return <>
-    <header className='padding-x py-8 absolute z-10 w-full'>
-      <nav className='flex justify-between items-center max-container'>
-        <a href="/">
-          <img src={headerLogo} alt="logo" width={130} height={29} />
-        </a>
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-          {navLinks.map((item) => (
-            <li key={item.label}>
-              <a href={item.href} className=' font-montserrat leading-normal text-lg text-slate-gray'>
-                {item.label}
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <>
+      <header className='padding-x py-8 absolute z-10 w-full'>
+        <nav className='flex justify-between items-center max-w-screen-xl mx-auto'>
+          <a href="/">
+            <img src={headerLogo} alt="logo" className="w-32 h-auto" />
+          </a>
+          <div className='lg:hidden'>
+            <img
+              src={hamburger}
+              alt="menu"
+              className="w-6 h-6 cursor-pointer"
+              onClick={toggleMenu}
+            />
+          </div>
+          <div
+            className={`lg:hidden absolute top-16 z-10 right-0 mt-2 p-4 border border-gray-300 shadow-md ${
+              menuOpen ? 'bg-white block' : 'hidden'
+            }`}
+          >
+            <ul className="space-y-4">
+              {navLinks.map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    className='text-lg text-gray-700 font-semibold hover:text-blue-600'
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+              <a
+                href="/"
+                className='text-lg text-gray-700 font-semibold hover:text-blue-600'
+              >
+                Sign In/Register
               </a>
-            </li>
-          ))}
-        </ul>
-        <a href="/" className='font-montserrat leading-normal text-lg text-slate-gray max-lg:hidden px-2'>sign-in/register</a>
+            </ul>
+          </div>
+          <div className='hidden lg:block'>
+            <ul className="flex space-x-8">
+              {navLinks.map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    className='text-lg text-gray-700 font-semibold hover:text-blue-600'
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+              <a
+                href="/"
+                className='text-lg text-gray-700 font-semibold hover:text-blue-600'
+              >
+                Sign In/Register
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </>
+  );
+};
 
-        <div className=' hidden max-lg:block'>
-          <img src={hamburger} alt="menu" width={25} height={25} />
-        </div>
-      </nav>
-    </header>
-  </>
-}
-
-export default Nav
+export default Nav;
