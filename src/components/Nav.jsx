@@ -41,12 +41,6 @@ const Nav = () => {
                   </a>
                 </li>
               ))}
-              <a
-                href="/"
-                className='text-lg text-gray-700 font-semibold hover:text-blue-600'
-              >
-                Sign In/Register
-              </a>
             </ul>
           </div>
           <div className='hidden lg:block'>
