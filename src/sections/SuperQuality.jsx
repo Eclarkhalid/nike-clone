@@ -9,16 +9,17 @@ const SuperQuality = () => {
 
       <div className="flex flex-1 flex-col">
         <h2 className='mt-10 font-palanquin text-4xl capitalize lg:max-w-lg font-bold'>
-          <span className=' xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>We provide you <span className='text-coral-blue inline-block mt-3'>Super </span>
+          <span className=' xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>Discover <span className='text-coral-blue inline-block mt-3'>Premium </span>
           </span>
           <br />
-          <span className='text-coral-blue inline-block mt-3'>Quality </span> Shoes
+          <span className='text-coral-blue inline-block mt-3'>Footwear</span>
         </h2>
-        <p className='mt-4 lg:max-w-lg info-text'>Explore Nike's world of premium sportswear and athletic footwear. Discover top-quality products designed to enhance your athletic performance and style. Shop the latest collections and enjoy unbeatable comfort and style. Join the Nike community today.
+        <p className='mt-4 lg:max-w-lg info-text'>Explore Nike's world of top-tier sportswear and athletic footwear. Uncover high-quality products meticulously crafted to elevate both your athletic performance and style. Shop the latest collections and indulge in unbeatable comfort and fashion. Join the Nike community today.
         </p>
         <p className='mt-6 lg:max-w-lg info-text'>
-          Dive into our latest collections, offering unparalleled comfort and unmatched style. Be a part of the Nike community today and experience the epitome of sportswear excellence."
+          Immerse yourself in our newest collections, delivering unparalleled comfort and unrivaled style. Become a part of the Nike community today and experience the pinnacle of sportswear excellence.
         </p>
+
         <div className="mt-11">
           <Button label="View Details" />
         </div>
