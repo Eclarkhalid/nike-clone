@@ -5,7 +5,7 @@ const PopularProducts = () => {
   return <>
     <div className="max-container max-sm:mt-12" id="products">
       <div className="flex flex-col justify-start gap-5">
-        <h2 className='text-4xl font-palanquin'>Our Popular <span className="text-coral-red">Products</span></h2>
+        <h2 className='text-4xl font-palanquin'>Our Popular <span className="text-coral-blue">Products</span></h2>
         <p className=' lg:max-w-lg text-slate-gray mt-2 font-montserrat'>
           Explore top-quality products meticulously crafted to elevate your athletic performance and enhance your personal style.
         </p>

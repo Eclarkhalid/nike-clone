@@ -12,12 +12,12 @@ const Hero = () => {
   return <>
     <section id="home" className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container'>
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
-        <p className='text-xl font-montserrat text-coral-red'>Our Summer Collection</p>
+        <p className='text-xl font-montserrat text-coral-blue'>All Weather Collection</p>
         <h1 className='mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
-          <span className=' xl:bg-white xl:whitespace-nowrap relative lg:z-10 md:z-10 pr-10'>The New Arrival</span>
+          <span className=' xl:bg-white xl:whitespace-nowrap relative lg:z-10 md:z-10 pr-10'>The Most Latest</span>
 
           <br />
-          <span className='text-coral-red inline-block mt-3'>Nike </span> Shoes
+          <span className='text-coral-blue inline-block mt-3'>Nike </span> Shoes
         </h1>
         <p className=' font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 max-w-lg'>Explore Nike's world of premium sportswear and athletic footwear. Discover top-quality products designed to enhance your athletic performance and style. Shop the latest collections and enjoy unbeatable comfort and style. Join the Nike community today.
         </p>

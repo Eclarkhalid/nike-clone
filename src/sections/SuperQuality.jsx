@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-import {shoe8} from '../assets/images'
+import { shoe8 } from '../assets/images'
 
 const SuperQuality = () => {
   return <>
@@ -9,10 +9,10 @@ const SuperQuality = () => {
 
       <div className="flex flex-1 flex-col">
         <h2 className='mt-10 font-palanquin text-4xl capitalize lg:max-w-lg font-bold'>
-          <span className=' xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>We provide you <span className='text-coral-red inline-block mt-3'>Super </span>
+          <span className=' xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>We provide you <span className='text-coral-blue inline-block mt-3'>Super </span>
           </span>
           <br />
-          <span className='text-coral-red inline-block mt-3'>Quality </span> Shoes
+          <span className='text-coral-blue inline-block mt-3'>Quality </span> Shoes
         </h2>
         <p className='mt-4 lg:max-w-lg info-text'>Explore Nike's world of premium sportswear and athletic footwear. Discover top-quality products designed to enhance your athletic performance and style. Shop the latest collections and enjoy unbeatable comfort and style. Join the Nike community today.
         </p>
